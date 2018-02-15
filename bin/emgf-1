@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DRAGONEGG=/usr/lib/gcc/x86_64-linux-gnu/4.7/plugin/dragonegg.so
+
+gfortran-4.7 -S -flto -m32 -fplugin=${DRAGONEGG} -fverbose-asm -c "$*"
