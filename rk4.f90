@@ -25,7 +25,7 @@ SUBROUTINE RK4(t, y)
     INTEGER :: i
     REAL, PARAMETER :: y0 = 1, h = 0.1
     REAL, DIMENSION(4), PARAMETER :: Fscheme = (/ 1, 2, 2, 1 /)
-    REAl, DIMENSION(101), INTENT(OUT) :: t, y
+    REAL, DIMENSION(101), INTENT(OUT) :: t, y
     REAL, DIMENSION(4) :: F
 
     t(1) = 0
